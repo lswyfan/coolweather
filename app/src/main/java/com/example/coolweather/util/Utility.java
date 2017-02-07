@@ -24,8 +24,8 @@ public class Utility {
                 {
                     String[] array = p.split("\\|");
                     Province province = new Province();
-                    province.setProvinceName(array[0]);
-                    province.setProvinceCode(array[1]);
+                    province.setProvinceName(array[1]);
+                    province.setProvinceCode(array[0]);
                     coolWeatherDB.saveProvince(province);
                 }
                 return true;
@@ -45,8 +45,8 @@ public class Utility {
                 {
                     String[] array = c.split("\\|");
                     City city = new City();
-                    city.setCityName(array[0]);
-                    city.setCityCode(array[1]);
+                    city.setCityName(array[1]);
+                    city.setCityCode(array[0]);
                     city.setProvinceId(provinceId);
                     coolWeatherDB.saveCity(city);
                 }
@@ -67,8 +67,8 @@ public class Utility {
                 {
                     String[] array = c.split("\\|");
                     County county = new County();
-                    county.setCountyName(array[0]);
-                    county.setCountyCode(array[1]);
+                    county.setCountyName(array[1]);
+                    county.setCountyCode(array[0]);
                     county.setCityId(cityId);
                     coolWeatherDB.saveCounty(county);
                 }
