@@ -35,7 +35,7 @@ public class HttpUtil {
                         response.append(line);
                     if(listener != null) {
                         listener.OnFinish(response.toString());
-                        Log.d("HTTPUtil",response.toString());
+                     //   Log.d("HTTPUtil",response.toString());
                     }
                 }
                 catch(Exception e)
